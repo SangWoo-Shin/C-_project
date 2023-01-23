@@ -1,0 +1,8 @@
+Name: Sangwoo Shin
+ID: 119294213
+Email: sshin36@myseneca.ca
+Date: 2022-09-25
+
+ In Workshop 2, I used 'move constructor' and 'move assignment operator' and I could learn there are several differences between the copy and move operations. Firstly, the copy operation work with the lvalue references. On the other hand, the move operation use the rvalue references. Moreover, in the code, To copy a temporary object to the original object, the copy operation dynamically allocates new memory to perform 'deep copy'. In contrast, move operations move the address of the temporary object to the original object without new memory allocation and make the temporary object 'null'. Although the move operation performs 'shallow copy', because it doesn't allocate new memory during copying object, it can prevents copying data in the memory. Moreover, according to the output in my program, because the move operation does not use much memory, it performs much more faster than copy operation.
+ In order to avoid rereading file, I used the 'seekg' function in  'TennisLog(const char* fileName)' constructor. The seekg can move the cursor to read the file so that I could use it to read only the necessary parts without rereading the header contents.
+ The biggest difference between system_clock and steady_clock is that the former represents the time that has passed since January 1, 1970, Unix Time, while the latter represents the time that has passed since the last boot. In addition, the time from 'system_clock' can be changed during time measurement due to os time synchronization, but, in this workshop, since steady_clock is unlikely, I decided to use Steady_clock that can express more detailed and stable time.

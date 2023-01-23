@@ -1,0 +1,9 @@
+// Name: Sangwoo Shin
+// Seneca Student ID: 119294213
+// Seneca email: sshin36@myseneca.ca
+// Date of completion: DEC-03-2022
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+
+I learned a lot from OOP345 class this semester. In fact, at first, I doubted whether it was necessary to learn more about learning c++ again in the third semester. However, I could see that there was still a lot to learn about object orientation in this semester, and I was confident that if I learned c++ properly first, I would learn other object-oriented languages such as Python and Java quickly. This semester, I was able to learn many important concepts such as templates, lambda expressions, copy operators, move operators, and algorithm libraries, which made more complex content simpler than before. Finally, unlike the previous semester, I was able to go to school and take lab classes for the first time since this semester, and I was able to follow the class without any difficulty because Professor Hong kindly taught me one by one. Moreover, If there was a blockage in the middle of the assignment, the professor told me how to fix it in detail and what concept I was missing. Thank you so much for teaching me hard during the semester.

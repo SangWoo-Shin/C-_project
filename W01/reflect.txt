@@ -1,0 +1,16 @@
+Name: Sangwoo Shin
+ID: 119294213
+Email: sshin36@myseneca.ca
+Date: 2022-09-18
+
+
+  By doing this workshop, I could find 'constexpr' keyword at the w1_p1.cpp file.
+It looks similar with 'const' keyword but its function was slightly different with 'constexpr'.
+By using 'constexpr' keyword, the program can initialize the variable at compile time but if 
+The program use 'const' keyword, the variable is not sure to be initialized at compile time or run time.
+  Secondly, in terms of the difference between internal linkage and external linkage, internal linkage
+Refers to everything only in scope of translation unit. So I used 'static' keyword to make 'counter' variable to be initialized once during run-time On the other hand, External linkage refers to variables which exist beyond a specific translation unit. In this program I set the tax rate and discount rate as external variables 
+With 'extern' keyword
+  Moreover, I try to use the 'rule of 3' so I add copy constructor, copy assignment operator and destructor to
+do 'deep copy' and at part 2, I upgraded 'read' function by adding function in string library. 
+These functions have no constraints on the size of the character array, so I can only use as much memory as I need.
