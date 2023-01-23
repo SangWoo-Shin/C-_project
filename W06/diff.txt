@@ -1,0 +1,14 @@
+In line number 48 of your output:
+The output should be:
+| Mercedes | camper       | camping      | new    | 217.00 | electric van  *
+                                ^
+But your output is: 
+| Mercedes | camper       | camper       | new    | 217.00 | electric van  *
+                                ^
+
+Unmatched character details:
+The character in column 33 is supposed to be:
+  [i] ASCII code(105)
+but you printed
+  [e] ASCII code(101)
+

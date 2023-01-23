@@ -1,0 +1,14 @@
+Name: Sangwoo Shin
+Email: sshin36@myseneca.ca
+ID: 119294213
+Section: NFF
+Date: 2022-10-16
+
+
+The fundamental advantage of the functor is that it is easy to preserve the state between calls. That is, while the function supports only a single state, it may support several independent states, one for each function instance. Another good thing is that we don't have to use all the functions. For example, using the setObserver function declared in the collection module and the function pointer declared in the member variable, I can create and use several functions to be used in the main with one setObserver function. On the other hand, the lambda expression was used in this workshop to create a function that re-adjusts the price, and using the feature of capture in the lambda expression, the variables declared externally could be used in the lambda function, which made the 
+
+In order to open the file for SpellChecker module, and when it opens, data in file is sent to constructor and it saves data, but otherwise, it returns an error using the throw keyword and receives the error through the catch keyword on the main. To achieve the same result without using the above method, you can open the file in the main first, output an error message through the conditional statement, and quit program by using exit keyword. But this method requires storing data in a string variable one by one on the main and connecting it to the Spellchecker constructor, which makes the code longer
+
+Movie modules and book modules use almost similar logic, and to reduce this repetition, I will first declare only one module instead of declaring two modules, and then use the flag to design the logic for each data.
+
+In the workshop, there are += operator in the collection module and we need to use dynamic allocation to add data and resize the array, which requires a default constructor to create a new instance that is empty. In addition, in the main, there is movie class type array size of 5 is declared, which cannot be instantiated without a default constructor Thus, the default constructor is necessary in this workshop.

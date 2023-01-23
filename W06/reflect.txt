@@ -1,0 +1,14 @@
+Name: Sangwoo Shin
+Email: sshin36@myseneca.ca
+ID: 119294213
+Section: NFF
+Date: 2022-11-05
+
+
+In this workshop, information is extracted from a text file and stored in an object of each module, and in this process, an instance for each module was dynamically allocated. And then it added these objects to the vectors one by one using the += operator of the Autoshop module However, since there are no destructor in the car, van, racecar, and luxuryvan modules until the end of the program, it needs to deallocate the assigned memory elsewhere, and to solve this problem, I created destructor in the autoshop module and used vector iterators to remove each element of vector in the for loop.
+And the reason why it can deallocate all the memory with this for loop is that all the elements in the vector are stored as pointer values, not values.
+
+In order to create an instance from the loadData function, the createInstance function takes information from a text file within the function and creates an object from the module corresponding to the information through its constructor. However, if the information extracted in this process contains inappropriate information, the error is returned through throw. In this workshop, if the tag of the text file information is invalid, the createInstance function of the utility module made an exception. If the information about topSpeed and condition is not appropriate, the constructor of the car or van module made an exception.
+In addition, in the workshop, handling exceptions was used by using the try-catch and it seems that ,by using if condition, and if an exception occurs, it cat output an error through std:cerr.
+
+It is not possible to create a program using std::list<sds:Vehicle>' and 'std::vector<sds::Vehicle>. If you look at the autoshop module, there is no inheritance, so if it is made that the list and vector store its value itself, not the vehicle pointer, the data in the vector cannot be erased properly because it is not the pointer that stores the address

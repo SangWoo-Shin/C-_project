@@ -1,0 +1,10 @@
+Name: Sangwoo Shin
+Seneca Student ID: 119294213
+Seneca email: sshin36@myseneca.ca
+Date of completion: 2022-11-18
+
+
+  Compared to the workshop part 1, in the part 2, there are smart pointer, std::unique_ptr in += operator and writeSmart function respectively instead of raw pointer. I could find the advantage of using smart pointer at the writeSmart function. In writeRaw function from part 1, I should deallocate the memory after allocate memory for object. Moreover, after allocating memory for object, if there are some issue on it, then it should throw an error for exception handling. But if error is thrown, then it immediately escape the function, so it should use deallocation before throw error. In this situation, I realize that if the program is huge and complicated, then it needs number of exception handling and it requires a lot of deallocation. But if I use the smart pointer like std::unique_ptr or std::shared_ptr, it doesn't need to deallocate memory by myself. Because it automatically deallocate memory if the object go out the scope. So it could make code much simpler.
+
+  In the += operator I changed parameter from 'const T*' type to 'const std::unique_ptr<T>& object' type in order to add smart pointer type object into the array. Moreover in writeSmart function, it has almost similar code with writeRaw function's. But difference between former and latter is using smart pointer to allocate memory. In writeSmart function there are                     'std::unique_ptr<EmployeeWage> temp(new EmployeeWage(emp[i].name, sal[j].salary));' which allocate memory for object. And thanks for this smart pointer, in writeSmart function there are no 'delete' command.
+

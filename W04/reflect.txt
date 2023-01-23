@@ -1,0 +1,10 @@
+Name: Sangwoo Shin
+ID: 119294213
+Email: sshin36@myseneca.ca
+Date: 2022-10-09
+
+Composition and Aggregation are two types of associations used to represent the relationship between two classes. 
+ In aggregation, Both parent and child entities can also exist independently. Modification of the parent entity does not affect the child entity, and vice versa. The reason is that in this task, we used this aggregation in the 'ConfirmSender' class because each element stored in the double pointer array does not copy and store the reservation class type value, but has only that address.
+ On the other hand, In Composition, parent entity owns the child entity, so the child entity cannot exist without the parent entity.
+ In the Restaurant class, the parent entity has ownership of the child entity because of the composition, so when creating the copy function, it dynamically allocates an array of pointers to enough indexes to be copied, and then each element dynamically allocates each element to copy the value. Also, in order to delete the existing values to copy the values, all the data are stored in a stack structure, so the values of each element are deleted through the repetition statement, and then the entire array is deleted. And the move function is also used similarly to the above method
+ In contrast, in aggregation, there was no need to dynamically allocate an array twice when creating a copy or move function, just one time was enough, because, after I created array by using dynamic allocation, I just made each element in the array points to the address of the value

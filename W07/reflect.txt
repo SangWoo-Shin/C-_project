@@ -1,0 +1,11 @@
+Name: Sangwoo Shin
+Email: sshin36@myseneca.ca
+ID: 119294213
+Section: NFF
+Date: 2022-11-11
+
+
+In the display function which is in CrimeStatistics module, I used the for_each function to get a total crimes and total resolved cases. Because, in order to get the total value, I need to plus all the value in each Crime object into the 'total' variable. Moreover in sort function, I used std::sort function and lambda expression at the third parameter to sort the value in ascending order.
+The cleanList function should change the "[none]" to nothing, so I chose the 'std::transform' function to change the value in each object. And I used 'std::count_if' function at inCollection function. because if there are value that I want to find in the array then It count the number of value. So if the count value is bigger than 0, then since the array contains the value looking for, it returns true, otherwise it returns false. Lastly, in getListForProvince function I used std::copy_if function because this function needs to be returned by collecting elements that have the value I want to find, creating a new array.
+One thing I definitely felt while using the STL function in this workshop is that it is much simpler and the code length is shorter than when using the normal loop expression. For example, the std::sort function is a function that sorts the values in array, and implementing this function in a general loop expression requires quite a long code, whether using bubble sorting or selection sorting, but the above STL function allows for approximately two lines of code for sorting.
+In the sort function, the if/else if/else syntax is used to sort the corresponding values in each field, and if the user puts the wrong value, then by using else at the end, the program throws "invalid field name!" and then when using the sort function in the main, try catch is used for exception handling. 
